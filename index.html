@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Job Finder</title>
+  <meta name="description" content="Find job opportunities abroad with Global Job Finder.">
+  <link rel="stylesheet" href="style.css">
+</head><body>
+  <header class="navbar">
+    <div class="logo">Global Job Finder</div><nav>
+  <a href="#jobs">Jobs</a>
+  <a href="#about">About</a>
+  <button id="loginBtn">Login</button>
+  <button id="registerBtn">Register</button>
+</nav>
+
+  </header>  <main>
+    <section class="hero">
+      <h1>Find Your Next Job Abroad</h1>
+      <p>Discover employment opportunities around the world from one platform.</p>
+      <button id="heroRegister">Create Account</button>
+    </section><section id="jobs" class="jobs-section">
+  <h2>Available Jobs</h2>
+
+  <div class="filters">
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Search jobs..."
+    >
+
+    <select id="countryFilter">
+      <option value="">All Countries</option>
+    </select>
+
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+    </select>
+  </div>
+
+  <div id="jobsContainer" class="jobs-container">
+    <p>Loading jobs...</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Global Job Finder</h2>
+  <p>
+    Global Job Finder connects job seekers with employment opportunities
+    in different countries and industries.
+  </p>
+</section>
+
+  </main>  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-box">
+      <button id="closeModal" class="close">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>  <div id="toast" class="toast"></div>  <footer>
+    <p>&copy; 2026 Global Job Finder. All rights reserved.</p>
+  </footer>  <script src="index.js"></script></body>
+      </html>
